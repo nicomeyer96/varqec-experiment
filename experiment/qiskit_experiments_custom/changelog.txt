@@ -1,0 +1,32 @@
+parallel_experiment:
+    - imports custom composite_experiment, base_experiment, composite_analysis
+    - propagates use of Qiskit Session to composite_experiment
+
+composite_experiment:
+    - imports custom base_experiment, composite_analysis
+    - propagates use of Qiskit Session to base_experiment
+
+base_experiment:
+    - allows the usage of Qiskit Session (beneath direct execution on backend)
+    - separates 'run' method into
+        - a 'submit' method that submits the jobs in a non-blocking fashion and returns the ob_ids
+        - a 'retrieve' method that waits for execution of the jobs in a blocking fashion and triggers the analysis
+
+batch_experiment:
+    - imports custom composite_experiment, base_experiment, composite_analysis
+
+mit_qst_experiment:
+    - imports custom mitigated_tomography_analysis, batch_experiment
+    - propagates resample flag to mit_tomography_analysis
+
+mit_tomography_analysis:
+    - imports custom composite_analysis
+    - propagates resample flag to composite_analysis
+
+composite_analysis:
+    - Added 'resample' flag to '_component_experiment_data method', propagates to '_marginalized_component_data'
+    - Adapted '_marginalized_component_data' method
+        - removed '_format_memory' call (to enable IQM experiments)
+        - removed logging of memory (to enable IQM experiments)
+        - added possibility for cluster re-sampling
+    - Added `_resample` method that performs cluster re-sampling

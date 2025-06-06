@@ -1,0 +1,16 @@
+# general setup
+pennylane==0.39.0
+torch==2.4.1
+numpy==2.0.2
+configargparse==1.7
+
+# setting up hardware experiments
+qiskit==1.1.0  # pin this version to avoid conflicts with packages below
+qiskit-aer==0.14.2
+qiskit-experiments==0.8.1
+
+# running experiments on IBMQ hardware
+qiskit-ibm-runtime==0.34.0
+
+# running experiments on IQM hardware
+qiskit-iqm==15.6
