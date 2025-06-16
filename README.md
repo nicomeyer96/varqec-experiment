@@ -1,7 +1,7 @@
 # Variational Quantum Error Correction (VarQEC) -- Hardware Experiment
 
-[![Static Badge](https://img.shields.io/badge/arXiv-0000.00000-red)
-](https://arxiv.org/search/quant-ph?query=Meyer%2C+Nico&searchtype=author&abstracts=show&order=-announced_date_first&size=50)[![Static Badge](https://img.shields.io/badge/VarQEC_Module-blue)
+[![Static Badge](https://img.shields.io/badge/arXiv-2506.11552-red)
+](https://arxiv.org/abs/2506.11552)[![Static Badge](https://img.shields.io/badge/VarQEC_Module-blue)
 ](https://github.com/nicomeyer96/varqec)
 
 This repo contains the code for the hardware experiments in the paper ["Learning Encodings by Maximizing State Distinguishability: Variational Quantum Error Correction", N. Meyer et al., arXiv:2506.11552, 2025](https://arxiv.org/abs/2506.11552).
