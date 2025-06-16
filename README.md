@@ -4,7 +4,7 @@
 ](https://arxiv.org/search/quant-ph?query=Meyer%2C+Nico&searchtype=author&abstracts=show&order=-announced_date_first&size=50)[![Static Badge](https://img.shields.io/badge/VarQEC_Module-blue)
 ](https://github.com/nicomeyer96/varqec)
 
-This repo contains the code for the hardware experiments in the paper ["Learning Encodings by Maximizing State Distinguishability: Variational Quantum Error Correction", N. Meyer et al., arXiv:0000.00000, 2025](https://arxiv.org/search/quant-ph?query=Meyer%2C+Nico&searchtype=author&abstracts=show&order=-announced_date_first&size=50).
+This repo contains the code for the hardware experiments in the paper ["Learning Encodings by Maximizing State Distinguishability: Variational Quantum Error Correction", N. Meyer et al., arXiv:2506.11552, 2025](https://arxiv.org/abs/2506.11552).
 The implementation of the overall pipeline is available at this [GitHub repository](https://github.com/nicomeyer96/varqec).
 
 > [...]. We also provide proof-of-concept demonstrations on IBM and IQM hardware devices, highlighting the practical 
@@ -115,9 +115,9 @@ If you use this implementation or results from the paper, please cite our main w
 @article{meyer2025learning,
   title={Learning Encodings by Maximizing State Distinguishability: Variational Quantum Error Correction},
   author={Meyer, Nico and Mutschler, Christopher and Maier, Andreas and Scherer, Daniel D.},
-  journal={tba},
+  journal={arXiv:2506.11552},
   year={2025},
-  doi={tba}
+  doi={10.48550/arXiv.2506.11552}
 }
 ```
 
